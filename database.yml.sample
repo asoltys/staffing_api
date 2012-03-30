@@ -1,0 +1,6 @@
+development:
+  adapter: sqlserver
+  host: 
+  database: 
+  username: 
+  password: 

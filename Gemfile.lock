@@ -1,0 +1,47 @@
+GIT
+  remote: https://github.com/integrity/sinatra-authorization
+  revision: 2e0aac2fcbd08ed37c4b0e0aed44046f8a9a62cf
+  specs:
+    sinatra-authorization (1.0.0)
+      sinatra (>= 0.9.1.1)
+
+GIT
+  remote: https://github.com/rails-sqlserver/activerecord-sqlserver-adapter
+  revision: ac06451c5afcef8314623ec8503ceaa206c38259
+  tag: 2.3.24
+  specs:
+    activerecord-sqlserver-adapter (2.3.24)
+      activerecord (~> 2.2)
+
+GIT
+  remote: https://github.com/sinatra/sinatra
+  revision: ebd197d2afc8341d4b93417bd9d7cba8a15ba4a6
+  specs:
+    sinatra (1.4.0)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activerecord (2.3.14)
+      activesupport (= 2.3.14)
+    activesupport (2.3.14)
+    rack (1.4.1)
+    rack-protection (1.2.0)
+      rack
+    shotgun (0.9)
+      rack (>= 1.0)
+    tilt (1.3.3)
+    tiny_tds (0.5.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activerecord-sqlserver-adapter!
+  shotgun
+  sinatra!
+  sinatra-authorization!
+  tiny_tds
