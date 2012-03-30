@@ -2,7 +2,12 @@ require 'sinatra'
 require 'sinatra/authorization'
 require 'active_record'
 
-class Position < ActiveRecord::Base
+module Staffing
+  class Position < ActiveRecord::Base
+  end
+
+  class Process < ActiveRecord::Base
+  end
 end
 
 before do
@@ -10,6 +15,11 @@ before do
    ActiveRecord::Base.establish_connection(config)
 end
 
-get '/assignments' do
+get '/positions' do
   Position.all.to_json
 end
+
+get '/processes' do
+  Staffing::Process.all.as_json.to_s
+end
+
